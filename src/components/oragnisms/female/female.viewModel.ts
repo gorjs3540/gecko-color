@@ -7,7 +7,7 @@ export function FemaleViewModel() {
 
   function selectGecko(label: string) {
     setSelectedMaleGecko(label);
-    sessionStorage.setItem('male', label);
+    sessionStorage.setItem('female', label);
   }
 
   function backToMalePage() {
@@ -16,6 +16,7 @@ export function FemaleViewModel() {
 
   function reset() {
     setSelectedMaleGecko('');
+    sessionStorage.setItem('female', '');
   }
 
   function next() {
