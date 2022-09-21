@@ -19,13 +19,13 @@ const MaleView: React.FC = () => {
           <h6>Back to first page</h6>
         </BackButtonWrapper>
         <TitleWrapper>
-          <Title>Result Your Gecko</Title>
+          <Title>Oh, no! Didnt get the results.</Title>
           <SubTitle>
-            When you click a tag, only objects that contain that tag are
-            displayed.
+            This can happen if you enter through the Url path or do not follow
+            the flow.
           </SubTitle>
           <GuildText>
-            This is a family table about Lily White & Cappuccino.
+            Start all over again through the upper left button!
           </GuildText>
         </TitleWrapper>
       </Wrapper>
@@ -45,7 +45,7 @@ const MaleView: React.FC = () => {
           displayed.
         </SubTitle>
         <GuildText>
-          This is a family table about Lily White & Cappuccino.
+          This is a family table about {male} & {female}.
         </GuildText>
       </TitleWrapper>
       <ResultWrapper>
