@@ -1,13 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+
 interface IProps {
   label: string;
   onClick: (label: string) => void;
 }
 
-const SelectCard: React.FC<IProps> = (props) => {
+const ChromosomeSelectCard: React.FC<IProps> = (props) => {
   const { label, onClick } = props;
+
+  const selectedMale = sessionStorage.getItem('male');
 
   function onClickCard() {
     onClick(label);
@@ -24,8 +28,8 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30rem;
-  height: 36rem;
+  width: 8rem;
+  height: 4.8rem;
   border-radius: 1.6rem;
   box-shadow: 0rem 0.3rem 0.6rem rgba(0, 0, 0, 0.1),
     0rem 0.4rem 0.8rem rgba(0, 0, 0, 0.08),
@@ -33,6 +37,6 @@ const Wrapper = styled.div`
   cursor: pointer;
 `;
 
-const Label = styled.h4``;
+const Label = styled.h6``;
 
-export default SelectCard;
+export default ChromosomeSelectCard;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import ArrowBackIcon from '@material-ui/icons/ArrowBackIos';
 
 interface IProps {
   onClickBack: () => void;
@@ -39,8 +39,9 @@ const Wrapper = styled.div`
   width: 26rem;
   height: 6rem;
   border-radius: 1.6rem;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.08),
-    0px 1px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0rem 0.3rem 0.6rem rgba(0, 0, 0, 0.1),
+    0rem 0.4rem 0.8rem rgba(0, 0, 0, 0.08),
+    0rem 0.1rem 1.2rem rgba(0, 0, 0, 0.04);
 `;
 
 const TextWrapper = styled.div`
